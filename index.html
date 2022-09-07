@@ -7,6 +7,11 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/style.css">
 
+  <!-- font -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+  </style>
+
   <title>Frontend Mentor | Interactive card details form</title>
 
 </head>
@@ -14,82 +19,104 @@
 
   <main>
 
-    <img src="./images/bg-main-desktop.png" alt="bg">
-
-    <div class="card-front">
-
-      <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
-  
-      <div class="card-number">
-        0000 0000 0000 0000
-      </div>
-  
-      <div class="card-owner">
-        Jane Appleseed
-      </div>
-  
-      <div class="expiry-date">
-        00/00
-      </div>
+    <div class="bg-image">
     </div>
+
+    <section class="left-section">
+
+      <div class="card-front">
   
-    <div class="card-back">
-      000
-    </div>
-  
-    <div class="form">
+        <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+    
+        <h2 class="card-number">
+          0000 0000 0000 0000
+        </h3>
+    
+        <div class="card-footer">
+          
+          <p class="card-owner">
+            Jane Appleseed
+          </p>
       
-        <label>
+          <p class="expiry-date">
+            00/00
+          </p>
+  
+        </div>
+      </div>
+    
+      <div class="card-back">
+        <p>
+          000
+        </p>
+      </div>
+
+    </section>
+  
+    <section class="right-section">
+
+    <div class="registration">
+
+      <form>
+        
+        <label class="area-4">
           Cardholder Name
         </label>
-        <input type="text" placeholder="e.g. Jane Appleseed">
-  
-        <label>
+        <input class="area-4" type="text" placeholder="e.g. Jane Appleseed">
+    
+        <label class="area-4">
           Card Number
         </label>
-        <input type="text" placeholder="e.g. 1234 5678 9123 0000">
-      
-        <label>
+        <input class="area-4" type="text" placeholder="e.g. 1234 5678 9123 0000">
+        
+        <label class="area-2">
           Exp. Date (MM/YY)
         </label>
-        <input type="text" placeholder="MM">
-        <input type="text" placeholder="YY">
-      
-        <label>
+
+        <label class="area-2">
           CVC
         </label>
-        <input type="text" placeholder="e.g. 123">
-  
-    </div>
-  
-    <div class="submit-btn">
-      Confirm
+        
+        <input class="area-1" type="text" placeholder="MM">
+        <input class="area-1" type="text" placeholder="YY">
+          
+        <input class="area-2" type="text" placeholder="e.g. 123">
+    
+      </form>
+    
+      <button class="submit-btn">
+        Confirm
+      </button>
+      
     </div>
 
-    <!-- Completed state start -->
-  
-    <div class="ty">
-      
-      <h1>
-        Thank you!
-      </h1>
-      
-      <p>
-        We've added your card details
-      </p>
-  
-      <button>
-        Continue
-      </button>
-  
-    </div>
+      <!-- Completed state start -->
+    
+      <div class="ty">
+        
+        <h1>
+          Thank you!
+        </h1>
+        
+        <p>
+          We've added your card details
+        </p>
+    
+        <button>
+          Continue
+        </button>
+    
+      </div>
+
+    </section>
+
 
   </main>
 
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </footer>
 </body>
 </html>
